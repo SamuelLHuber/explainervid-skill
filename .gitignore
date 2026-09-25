@@ -1,0 +1,14 @@
+# Generated projects / local outputs
+*_video/
+.venv/
+.devenv/
+.direnv/
+__pycache__/
+*.pyc
+.DS_Store
+
+# Manim/build outputs if testing inside repo
+build/
+out/
+media/
+audio/raw/
