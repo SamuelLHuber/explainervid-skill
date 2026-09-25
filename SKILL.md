@@ -33,6 +33,7 @@ Create a directory named `<slug>_video/` containing:
 ```text
 <slug>_video/
 ├── devenv.nix
+├── devenv.lock
 ├── devenv.sh
 ├── build.py
 ├── explainer.py              # or rename consistently and update build.py SOURCE
@@ -93,7 +94,7 @@ Do not use Manim `-a`; render only production scene classes.
 
 ## Reproducible environment
 
-Use the bundled `devenv.nix` and `devenv.sh` pattern. Initial setup in a generated project:
+Use cachix/devenv via the bundled `devenv.nix`, pinned `devenv.lock`, and `devenv.sh` wrapper. Initial setup in a generated project:
 
 ```bash
 ./devenv.sh 'python -m pip install -r requirements.txt'

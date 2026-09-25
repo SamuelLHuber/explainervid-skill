@@ -4,7 +4,7 @@ Pi/Agent Skill for creating reproducible Manim + Piper educational explainer vid
 
 The skill scaffolds a project with:
 
-- `devenv.nix` + `devenv.sh` for reproducible native dependencies
+- `devenv.nix` + `devenv.lock` + `devenv.sh` using [cachix/devenv](https://github.com/cachix/devenv) for reproducible native dependencies
 - Manim Community Edition project template
 - Piper-compatible voiceover pipeline
 - subtitle/chapter/final MP4 assembly via FFmpeg

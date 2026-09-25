@@ -14,6 +14,9 @@ SKILL_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 
 mkdir -p "$DEST"/audio/scripts "$DEST"/audio/raw "$DEST"/out "$DEST"/tests "$DEST"/voices
 cp "$SKILL_DIR/templates/devenv.nix" "$DEST/devenv.nix"
+if [ -f "$SKILL_DIR/templates/devenv.lock" ]; then
+  cp "$SKILL_DIR/templates/devenv.lock" "$DEST/devenv.lock"
+fi
 cp "$SKILL_DIR/templates/devenv.sh" "$DEST/devenv.sh"
 cp "$SKILL_DIR/templates/build.py" "$DEST/build.py"
 cp "$SKILL_DIR/templates/explainer.py" "$DEST/explainer.py"
